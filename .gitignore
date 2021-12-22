@@ -1,3 +1,5 @@
+/build/
+
 # Prerequisites
 *.d
 
@@ -50,3 +52,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Language Server Stuff
+.cache/
