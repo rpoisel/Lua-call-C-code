@@ -1,7 +1,7 @@
 project(Lua-call-C-code C)
 cmake_minimum_required(VERSION 3.11)
 
-find_package(Lua51)
+find_package(Lua "5.1" EXACT)
 
 add_library(sample SHARED
   library.c

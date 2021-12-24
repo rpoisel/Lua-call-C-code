@@ -10,6 +10,7 @@ static int l_add(lua_State *L) {
   return 1; /* number of results */
 }
 
+#if LUA_VERSION_NUM < 502
 static const struct luaL_reg sample[] = {
     {"add", l_add}, {NULL, NULL} /* sentinel */
 };
@@ -18,3 +19,4 @@ int luaopen_sample(lua_State *L) {
   luaL_openlib(L, "sample", sample, 0);
   return 1;
 }
+#endif
